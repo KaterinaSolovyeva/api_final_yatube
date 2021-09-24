@@ -1,3 +1,10 @@
+# IDE stuff
+.vscode/
+
+# Static files
+static/
+yatube_api/static
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
