@@ -65,7 +65,7 @@ class FollowViewSet(viewsets.ModelViewSet):
     """Модель запроса к подпискам пользователя. Анонимные запросы запрещены."""
     serializer_class = FollowSerializer
     filter_backends = (filters.SearchFilter,)
-    search_fields = ('following__username',)
+    search_fields = ('=following__username',)
 
     def get_queryset(self):
         new_queryset = Follow.objects.filter(user=self.request.user)
